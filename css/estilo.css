@@ -82,15 +82,23 @@ margin: 15px;
     font-family: serif;
     font-size: 25px;
     background-color: #000000;
-    margin: 15px;
-    list-style: none;
-    padding: 13px;
+    margin: 15px; 
+    /* list-style: none; */
 }
+
 .nav li a {
     text-decoration: none;
     color: #ffffff;
     display: flex;
-   
+}
+.nav li a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-style: solid;
+    border-color: #000000;
+    transform: scale(1.1);
+    margin: auto;
+    transition: 0.3s ease;
 }
 
 /* estilo main */
@@ -191,7 +199,10 @@ margin: 15px;
     box-shadow: 10px 7px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 7px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 7px 5px 0px rgba(0, 0, 0, 0.75);
+ animation-name: fade-in;
+    animation-duration: 1s;
 }
+
 
 /* obra sociales */
 
@@ -263,6 +274,7 @@ footer p{
     .img-hoteles {
         transform: translateX(38px);
     }
+   
 }
 @media screen and (max-width:420px) {
     .encabezado {
@@ -270,5 +282,14 @@ footer p{
     }
 .img-hoteles {
     transform: translateX(18px); 
+}
+}
+/* usando keyframes */
+@keyframes fade-in{
+0% {
+transform: translateX(-1000px);
+}
+100%{
+    transform: translateX(0px);
 }
 }
