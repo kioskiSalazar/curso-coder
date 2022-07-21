@@ -200,9 +200,12 @@ margin: 15px;
 }
 .div-Historia iframe { 
     width: 560px;
-     height: 315px; 
-
+     height: 315px;
+      margin-left: auto;
+    margin-right: auto; 
+    display: block;
 }
+
 
 /* footer */
 
@@ -220,6 +223,7 @@ footer p{
     height: 45px;
 }
 /* media query */
+
 @media screen and (max-width:755px)  {
     .menu {
         flex-direction: column;
@@ -235,6 +239,7 @@ footer p{
     }
     .img-hoteles {
         grid-template-columns: repeat(1, 1fr);
+    transform: translateX(23px);
     }
     
 }
@@ -254,13 +259,16 @@ footer p{
 
     .div-Historia iframe { 
         width: 100%;
-          
-    
+    }
+    .img-hoteles {
+        transform: translateX(38px);
     }
 }
 @media screen and (max-width:420px) {
     .encabezado {
         flex-direction: column;
     }
-
+.img-hoteles {
+    transform: translateX(18px); 
+}
 }
