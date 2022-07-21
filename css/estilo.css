@@ -1,0 +1,266 @@
+/* estilo de body */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.encabezado {
+    display: flex;
+   justify-content: space-between;
+}
+
+.encabezado li {
+    list-style: none;
+    display: flex;
+    margin: 20px;
+}
+
+/* logo */
+.logo img {
+    width: 100px;
+    height: 100px;
+
+}
+
+/* estilo h1 */
+.h1 {
+
+    text-align: center;
+    color: #2c2cff;
+    font-size: 65px;
+    align-items: center;
+}
+
+/* estilo header */
+.header {
+    background-color: #070808;
+    display: flex;
+    align-items: center;
+}
+
+.haeder p {
+    margin-bottom: 0px;
+    padding: 0;
+    align-items: center;
+    }
+#p-header {
+    color: #000000;
+    text-align: center;
+    font-weight: 1000;
+background-color: #ffffff;
+border-color: #000000;
+border-style: solid;
+margin: 15px;
+}
+
+/* estilos del nav */
+.menu {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.nav {
+    background-color: #b0b0b0a2;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    justify-content: center;
+    
+} 
+
+.nav li {
+
+    display: flex;
+    text-align: center;
+    font-family: serif;
+    font-size: 25px;
+    background-color: #000000;
+    margin: 15px;
+    list-style: none;
+    padding: 13px;
+}
+.nav li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+   
+}
+
+/* estilo main */
+/* estilos de lo h2 */
+.h2-secretaria {
+    text-align: center;
+    padding: 20px;
+}
+.main img{
+    width: 80%; 
+    margin: auto;
+}
+
+.h2 {
+    text-align: center;
+    font-weight: 1000;
+    text-align: center;
+    font-size: 40px;
+    font-family: serif;
+    color: #0000ff;
+}
+
+/* estilo de p */
+.parrafo {
+    text-align: center;
+    font-weight: 1000;
+    text-align: center;
+    font-size: 25px;
+    font-family: serif;
+    color: #000000;
+}
+
+#consultas {
+    font-family: serif;
+    background-color: #00ffff;
+    width: 250px;
+    padding: 10px;
+    border-style: solid;
+    border-color: #0000ff;
+    justify-content: space-around;
+}
+
+.direccion li {
+    display: inline-block;
+}
+
+.direccion {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding-top: 0px;
+}
+
+.direccion img{
+    width: 20px ; 
+    height:20px;
+}
+.main {
+    background-color: #b0b0b0;
+    align-items: center;
+}
+.main img {
+    margin-left: 50px;
+    justify-content: center;   
+}
+
+
+.img-obra-social img {
+    margin: 10px 10px 10px 10px;
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 400px;
+    gap: 20px;
+    width: 90%;
+}
+
+.tex-obra-social p {
+    text-align: left;
+    font-weight: 1000;
+    font-size: 25px;
+    font-family: serif;
+    color: #000000;
+    margin-left: 15px;
+}
+
+/* fotos de turismo.html  */
+.img-hoteles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 600px;
+    gap: 20px;
+}
+
+.img-hoteles img {
+    width: 80%;
+    height: 90%;
+    margin-top: 25px;
+    object-fit: cover;
+    box-shadow: 10px 7px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 7px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 7px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* obra sociales */
+
+.tex-obra-social p {
+    margin-top: 10px;
+}
+.div-Historia iframe { 
+    width: 560px;
+     height: 315px; 
+
+}
+
+/* footer */
+
+footer {
+    background-color: #000000;
+    color: white;
+}
+footer p{
+    text-align: center;
+}
+
+
+.footer img {
+    width: 45px;
+    height: 45px;
+}
+/* media query */
+@media screen and (max-width:755px)  {
+    .menu {
+        flex-direction: column;
+    }
+    .nav {
+        position: relative;
+    }
+    .h1 {
+        font-size: 40px;
+    }
+    .h2 {
+       font-size: 28px;
+    }
+    .img-hoteles {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+@media screen and (max-width:569px) {
+    #p-header {
+        display: none;
+    }
+    .direccion img{
+        display: none;
+    }
+    .h2-secretaria {
+        padding: 5px;
+    }
+    .main img {
+        margin-left: 20px;
+    }
+
+    .div-Historia iframe { 
+        width: 100%;
+          
+    
+    }
+}
+@media screen and (max-width:420px) {
+    .encabezado {
+        flex-direction: column;
+    }
+
+}
